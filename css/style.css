@@ -1,0 +1,154 @@
+/* 1 */
+.button_section {
+  width: 300px;
+  height: 150px;
+  margin-left: 100px;
+  margin-top: 100px;
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.first_button {
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-color: pink;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: inset 2px 2px 1px white, 4px 4px 3px #353535;
+  color: white;
+  letter-spacing: 5px;
+  text-shadow: 3px 3px 3px #353535;
+  cursor: pointer;
+}
+.first_button:active {
+  box-shadow: inset -2px -2px 1px white, inset 2px 2px 1px #353535;
+  text-shadow: 1px 1px 1px #353535;
+}
+/* 2 */
+.section_2 {
+  width: 300px;
+  height: 300px;
+  margin: 80px 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  transition: all 1s;
+}
+.drake {
+  transition: all 1s;
+}
+.drake_text {
+  font-size: 25px;
+  color: blueviolet;
+}
+.section_2:hover {
+  border-radius: 20px;
+  box-shadow: 1px 1px 4px 4px blueviolet, -1px -1px 4px 4px blueviolet;
+}
+.section_2:hover img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+/* 3 */
+.text {
+  font-size: 140px;
+  color: red;
+  margin-left: 100px;
+  letter-spacing: 20px;
+  animation: text infinite 0.5s;
+}
+@keyframes text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* 4 */
+.section_4 {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+.spinner {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border-left: 50px solid green;
+  border-top: 50px solid green;
+  border-bottom: 50px solid yellow;
+  border-right: 50px solid red;
+  animation: spinning 1s linear infinite;
+}
+.spinner_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: green;
+  text-shadow: 3px 3px 3px green;
+}
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spinner:hover {
+  animation-play-state: paused;
+}
+/* 5 */
+.header {
+  width: 1440px;
+  margin: 80px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+  padding: 30px;
+}
+.header_nav_ul {
+  display: flex;
+  gap: 20px;
+}
+.header_nav_ul_li {
+  font-size: 40px;
+  color: beige;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px #353535;
+  transition: all 1s;
+}
+.header_nav_ul_li:hover {
+  text-shadow: 0 0 5px blueviolet, 0 0 20px blueviolet, 0 0 65px blueviolet,
+    0 0 150px blueviolet;
+}
+/* 6 */
+.loading {
+  width: 1000px;
+  height: 40px;
+  border: 2px solid #353535;
+  margin: 80px auto;
+}
+.fill {
+  height: 100%;
+  width: 0%;
+  background-color: lightskyblue;
+  animation: filling 5s linear 0.5s 1  forwards;
+}
+@keyframes filling{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+/* End Code 14:32 */
+/* გულწრფელი მადლობა, ამდენი წვალებით სიამოვნება არასდროს მიმიღია<3, იმედია, იდეალურად სწორი თუარა მიახლოებით სწორი მაინც იქნება  */
